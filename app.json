@@ -1,13 +1,20 @@
 {
   "pages":[
+<<<<<<< HEAD
     "pages/driverUserPage/driverUserPage",
     "pages/task/task",
     "pages/service/service",
+=======
+    "pages/login1/login1",
+    "pages/login2/login2",
+    "pages/login3/login3",
+>>>>>>> master
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list"
   ],
   "window":{
+<<<<<<< HEAD
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#4161A7",
     "navigationBarTitleText": "城乡顺运",
@@ -35,6 +42,12 @@
         "selectedIconPath": "/images/tabs/my-active.png"
       }
     ]
+=======
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "城乡顺运",
+    "navigationBarTextStyle":"black"
+>>>>>>> master
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="title">城乡顺运</view>
+  <view class="login">
+    <view class="text">请选择登陆身份</view>
+    <navigator url="/pages/login2/login2">
+      <button class="option">我是司机</button>
+    </navigator>
+    <navigator url="/pages/login3/login3">
+      <button class="option">我是乘客</button>
+    </navigator>
+  </view>
+</view>
