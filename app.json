@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/login1/login1",
+    "pages/login2/login2",
+    "pages/login3/login3",
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
@@ -8,7 +11,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "城乡顺运",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
