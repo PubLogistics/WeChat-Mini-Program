@@ -1,0 +1,28 @@
+<!--司机登录-->
+<view class="container">
+    <image src="/images/bg2.jpg" mode="widthFix"></image>
+    <view class="content">
+        <view class="title">司机登录</view>
+        <view class="in-group">
+            <view class="inner">
+                <view class="name">手机号</view>
+                <input bindinput="inputNo" placeholder="请输入手机号码" type="number"></input>
+            </view>
+            <view class="inner">
+                <view class="name">密码</view>
+                <input bindinput="inputPassword" placeholder="请输入密码" password="true"></input>
+            </view>
+            
+            <!--<navigator class="forget">忘记密码？</navigator>-->
+        </view>
+        <view class="login">
+            <button class="btn-dl" bindtap="login">登录</button>
+        </view>
+        <view class="divLine"></view>
+        <view class="sign">
+            <view class="noid">没有账号？</view>
+            <button class="btn-sn">前往注册</button>
+        </view>
+    </view>
+
+</view>

@@ -1,12 +1,20 @@
 <view class="container">
-  <view class="title">城乡顺运</view>
-  <view class="login">
-    <view class="text">请选择登陆身份</view>
-    <navigator url="/pages/login2/login2">
-      <button class="option">我是司机</button>
-    </navigator>
-    <navigator url="/pages/login3/login3">
-      <button class="option">我是乘客</button>
-    </navigator>
+
+  <image class="bg" src="/images/bg.jpg" mode="heightFix"></image>
+  <view class="head">
+    <image class="logo" src="/pages/login1/logo.jpg" mode="widthFix"></image>
+    <text class="title">城乡顺运</text>
   </view>
+  <view class="bottom">
+    <view class="txt">请选择登录身份</view>
+    <view class="choice">
+      <navigator url="/pages/login2/login2" style="width: 100%; height: 100%;">
+        <button class="b1" style="width: 80%; height: 40%;">我是司机</button>
+      </navigator>
+      <navigator url="/pages/login3/login3" style="width: 100%; height: 100%;">
+        <button class="b2" style="width: 80%; height: 40%;">我是乘客</button>
+      </navigator>
+    </view>
+  </view>
+
 </view>

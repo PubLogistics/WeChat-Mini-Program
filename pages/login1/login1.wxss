@@ -1,1 +1,72 @@
+
+page{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.head{
+  display: flex;
+  margin: 10% 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 50%;
+}
+.logo{
+  z-index: 1;
+  width: 100%;
+}
+.title{
+  z-index: 1;
+  margin: 10%;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: NaNpx;
+  letter-spacing: NaNem;
+  color: #FFFFFF;
+}
+.bottom{
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+.txt{
+  z-index: 2;
+  width: 100%;
+  height: 10%;
+  margin: 5% 0 0 0;
+  text-align: center;
+  font-family: Poppins-Regular;
+  font-size: NaNpx;
+  font-weight: normal;
+  line-height: NaNpx;
+  letter-spacing: NaNem;
+  color: #FFFFFF;
+}
+.choice{
+  display: flex;
+  margin: 7% 0 0 0;
+  flex-direction: row;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+button{
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  background: #4161A7;
+}
 /* pages/login1/login1.wxss */

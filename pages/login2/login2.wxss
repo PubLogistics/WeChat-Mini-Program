@@ -1,1 +1,60 @@
 /* pages/login2/login2.wxss */
+page{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+image{
+  width: 100%;
+  height: 20%;
+}
+.content{
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+.title{
+  z-index: 1;
+  margin: 0 0 5% 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+input{
+  width: 77%;
+  height: 40px;
+  margin: 3% 0;
+  border-radius: 6px;
+  border: 1px solid #000000;
+}
+.in-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
+}
+.login, .sign{
+  margin: 7% 0;
+}
+.divLine{
+  background: #E0E3DA;
+  width: 100%;
+  height: 3rpx;
+ }
+.noid{
+  text-align: center;
+  margin: 5%;
+}
