@@ -1,31 +1,35 @@
 // pages/driverUserPage/driverUserPage.js
 let app = getApp();
+// 获取云数据库引用
+const db = wx.cloud.database();
+let nickName = null;//变量，用于存放用户输入的用户名
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isLogin: false,
+    //isLogin: false,
     listData: [{
-      imgUrl: "/images/ziliao.png",
-      navUrl: "/pages/datumInfo/datumInfo",
+    //   imgUrl: "/images/ziliao.png",
+      navUrl: "/pages/serviceAgreement/serviceAgreement",
       text: "服务协议"
     }, {
-      imgUrl: "/images/cunchu.png",
-      navUrl: "/pages/cunchuList/cunchuList",
+    //   imgUrl: "/images/cunchu.png",
+      navUrl: "/pages/userGuide/userGuide",
       text: "操作手册"
     }, {
-      imgUrl: "/images/zhangdan.png",
-      navUrl: "/pages/historyBill/historyBill",
+    //   imgUrl: "/images/zhangdan.png",
+      navUrl: "/pages/identification/identification",
       text: "个人身份认证"
     }, {
-      imgUrl: "/images/fankyu.png",
-      navUrl: "/pages/helpTickling/helpTickling",
+    //   imgUrl: "/images/fankyu.png",
+      navUrl: "/pages/setting/setting",
       text: "个性化管理"
     }, {
-      imgUrl: "/images/guanyu.png",
-      navUrl: "/pages/aboutMine/aboutMine",
+    //   imgUrl: "/images/guanyu.png",
+      navUrl: "/pages/aboutPlatform/aboutPlatform",
       text: "关于平台"
     }, ],
   },
@@ -59,42 +63,42 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    var _this = this,
-      token = wx.getStorageSync('token');
-    if (!token) {
-      wx.showModal({
-        title: '提示',
-        content: '请您先登录',
-        success(res) {
-          if (res.confirm) {
-            wx.navigateTo({
-              url: '/pages/login/login',
-            });
-          } else if (res.cancel) {
-            wx.switchTab({
-              url: '/pages/home/home',
-            });
-          }
-        }
-      });
-    } else {
-      var imageUrl = wx.getStorageSync('imageUrl'),
-        nickName = wx.getStorageSync('nickName');
-      if (imageUrl && nickName) {
-        this.setData({
-          nickName,
-          imageUrl,
-          isLogin: true
-        });
-      };
-      app._get('user/getUserInfo', {}, res => {
-        this.setData({
-          userinfo: res.data
-        })
-      })
-    }
-  },
+//   onShow: function () {
+//     var _this = this,
+//       token = wx.getStorageSync('token');
+//     if (!token) {
+//       wx.showModal({
+//         title: '提示',
+//         content: '请您先登录',
+//         success(res) {
+//           if (res.confirm) {
+//             wx.navigateTo({
+//               url: '/pages/login1/login1',
+//             });
+//           } else if (res.cancel) {
+//             wx.switchTab({
+//               url: '/pages/driverUserPage/driverUserPage',
+//             });
+//           }
+//         }
+//       });
+//     } else {
+//       var imageUrl = wx.getStorageSync('imageUrl'),
+//         nickName = wx.getStorageSync('nickName');
+//       if (imageUrl && nickName) {
+//         this.setData({
+//           nickName,
+//           imageUrl,
+//           isLogin: true
+//         });
+//       };
+//       app._get('user/getUserInfo', {}, res => {
+//         this.setData({
+//           userinfo: res.data
+//         })
+//       })
+//     }
+//   },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -200,7 +204,7 @@ Page({
   sign_out() {
     wx.clearStorageSync(); //清楚缓存
     wx.redirectTo({
-      url: '../login/login',
+      url: '../login1/login1',
     })
   }
 })

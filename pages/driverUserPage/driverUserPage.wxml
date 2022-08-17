@@ -8,29 +8,30 @@
 			<!-- 登录 -->
 			<view class="nick">
 				<!--登录状态下用户头像-->
-				<view wx:if="{{ isLogin }}" class="userinfo">
+				<view class="userinfo">
 					<view class="pic">
-						<image src="{{ imageUrl }}"></image>
+						<!-- <image src="{{ imageUrl }}"></image> -->
+                        <image src="/images/figure.png"></image>
 					</view>
 					<view class="text">
 						<view class="nickname">{{ nickName }}</view>
 					</view>
 				</view>
 				<!--未登录状态下用户头像-->
-				<view wx:else class="userinfo" catchtap="onLogin">
+				<!-- <view wx:else class="userinfo" catchtap="onLogin">
 					<view class="pic">
 						<image src="/images/figure.png"></image>
 					</view>
 					<view class="text">
 						<view class="nickname">立即登录</view>
 					</view>
-				</view>
+				</view> -->
 			</view>
 			<!-- 待支付金额 -->
-			<view class="store_Info">
+			<!-- <view class="store_Info">
 				<view class="store_h">{{userinfo.pay_total_money}}</view>
 				<view class="store_p">待支付金额(元)</view>
-			</view>
+			</view> -->
 		</view>
 	</view>
 

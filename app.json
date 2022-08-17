@@ -8,7 +8,12 @@
     "pages/service/service",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/serviceAgreement/serviceAgreement",
+    "pages/userGuide/userGuide",
+    "pages/identification/identification",
+    "pages/setting/setting",
+    "pages/aboutPlatform/aboutPlatform"
   ],
   "window":{
     "backgroundTextStyle":"light",

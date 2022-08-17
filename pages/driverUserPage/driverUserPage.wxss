@@ -40,14 +40,15 @@
 }
 
 .nickname {
-  max-width: 300rpx;
+  width: 150rpx;
+  height: 50rpx;
   padding: 6rpx 30rpx;
   background: #4161A7;
   color: #fff;
   border-radius: 70rpx;
   font-size: 24rpx;
   letter-spacing: 1rpx;
-  overflow: hidden;
+  overflow: hidden; 
   text-overflow: ellipsis;
   white-space: nowrap;
 }
