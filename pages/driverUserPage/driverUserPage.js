@@ -10,6 +10,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    userInfo: {},
+    hasUserInfo: false,
+    canIUseGetUserProfile: false,
     //isLogin: false,
     listData: [{
     //   imgUrl: "/images/ziliao.png",
@@ -35,23 +38,38 @@ Page({
   },
 
   // 点击头像事件
-  onLogin() {
-    wx.navigateTo({
-      url: '/pages/login/login',
+//   onLogin() {
+//     wx.navigateTo({
+//       url: '/pages/login/login',
+//     })
+  onLoad() {
+    if (wx.getUserProfile) {
+        this.setData({
+          canIUseGetUserProfile: true
+        })
+      }
+  },
+  getUserProfile(e) {
+    wx.getUserProfile({
+      desc: '用于完善个人资料', // 声明获取用户个人信息后的用途
+      success: (res) => {
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
     })
   },
-
-  // 
-  cuncuInfo() {
-    wx.navigateTo({
-      url: '/pages/storeList/storeList',
-    })
-  },
+//   cuncuInfo() {
+//     wx.navigateTo({
+//       url: '/pages/storeList/storeList',
+//     })
+//   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {},
+//   onLoad: function (options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成

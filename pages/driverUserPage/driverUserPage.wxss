@@ -39,10 +39,11 @@
   display: block;
 }
 
-.nickname {
+/* .nickname {
   width: 150rpx;
   height: 50rpx;
   padding: 6rpx 30rpx;
+  margin-top: 30rpx;
   background: #4161A7;
   color: #fff;
   border-radius: 70rpx;
@@ -51,6 +52,29 @@
   overflow: hidden; 
   text-overflow: ellipsis;
   white-space: nowrap;
+} */
+
+.container1{
+    margin-left: 20rpx;
+    width: auto;
+    height:auto;
+}
+
+.ask{
+    margin-left:10rpx;
+    margin-top:25rpx;
+    width:100rpx;
+    height: 80rpx;
+}
+
+.userinfo-avatar{
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.userinfo-nickname{
+    margin-left: 20rpx;
+    font-size: 50rpx;
 }
 
 .store_Info {

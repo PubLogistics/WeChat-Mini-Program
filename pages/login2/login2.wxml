@@ -13,7 +13,7 @@
                 <input bindinput="inputPassword" placeholder="请输入密码" password="true"></input>
             </view>
             
-            <!--<navigator class="forget">忘记密码？</navigator>-->
+            <navigator class="forget" url="/pages/forgetPassword/forgetPassword">忘记密码？</navigator>
         </view>
         <view class="login">
             <button class="btn-dl" bindtap="login">登录</button>
@@ -21,7 +21,7 @@
         <view class="divLine"></view>
         <view class="sign">
             <view class="noid">没有账号？</view>
-            <button class="btn-sn">前往注册</button>
+            <button bindtap="signup" class="btn-sn">前往注册</button>
         </view>
     </view>
 

@@ -9,10 +9,10 @@
     <view class="txt">请选择登录身份</view>
     <view class="choice">
       <navigator url="/pages/login2/login2" style="width: 100%; height: 100%;">
-        <button class="b1" style="width: 80%; height: 40%;">我是司机</button>
+        <button class="b1" style="width: 150px; height: 45px; font-size: 17px;" >我是司机</button>
       </navigator>
       <navigator url="/pages/login3/login3" style="width: 100%; height: 100%;">
-        <button class="b2" style="width: 80%; height: 40%;">我是乘客</button>
+        <button class="b2" style="width: 150px; height: 45px; font-size: 17px;">我是乘客</button>
       </navigator>
     </view>
   </view>

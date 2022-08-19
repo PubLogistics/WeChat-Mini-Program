@@ -3,8 +3,6 @@ wx.cloud.init({
     env:'cloud1-8g20o7ib1c00c6cc',
     traceUser: true
 })
-//获取app变量
-var app = getApp();
 // 获取云数据库引用
 const db = wx.cloud.database();
 let phoneNo = null;//变量，用于存放用户输入的账号
@@ -28,6 +26,12 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  //注册函数
+  signup(event){
+    wx.navigateTo({
+      url: '/pages/driverSignUp/driverSignup'
+    })
+  },
   //登陆函数
   async  login() {
     const db = wx.cloud.database()
@@ -43,8 +47,7 @@ Page({
         for(let i=0;i<all.length;i++ ){
             if (phoneNo===all[i].phoneNo) {
                 if (password===all[i].password) {
-                    console.log('登入成功'),
-                    app.globalData.isLogin = true
+                    console.log('登入成功')
                     wx.showToast({
                         title: '登入成功',
                         icon:'success',
@@ -53,6 +56,7 @@ Page({
                     wx.reLaunch({
                         url: '/pages/driverUserPage/driverUserPage?phoneNo'+phoneNo,
                     })
+
 
         } else {
           console.log('密码错误')
