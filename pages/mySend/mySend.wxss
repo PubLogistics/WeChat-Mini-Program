@@ -1,0 +1,75 @@
+/* pages/mySend/mySend.wxss */
+/* .loc{
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #eee;
+}
+
+.location{
+    width: 12%;
+    height: 100rpx;
+    display: flex;
+    text-align: left;
+}
+
+.location text{
+    font-size: 10px;
+}
+
+.sendMessage{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.sendme{
+    display: flex;
+    width:80%;
+    height: 60rpx;
+    text-align: center;
+    background: #ffffff;
+    font-size: 20px;
+    padding:14px;
+    border-radius: 25rpx;
+}
+
+.sendme image{
+    margin-top: 6rpx;
+    margin-left: 40%;
+    width:10%;
+}
+
+.receiveme{
+    display: flex;
+    width:80%;
+    height: 60rpx;
+    text-align: center;
+    font-size: 20px;
+    padding:14px;
+    background: #ffffff;
+    border-radius: 25rpx;
+}
+
+.receiveme image{
+    margin-top: 6rpx;
+    margin-left: 40%;
+    width:10%;
+}
+
+.xian {
+    width: 80%;
+    height: 4rpx;
+    background: #e5e5e5;
+  }

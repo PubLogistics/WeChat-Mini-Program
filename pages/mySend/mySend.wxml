@@ -1,0 +1,20 @@
+<!--pages/mySend/mySend.wxml-->
+<view class="container">
+    <view class="loc">
+        <view class="location">
+            <image mode="widthFix" src="/images/location.png"></image>
+            <text>北京</text>
+        </view>
+    </view>
+    <view class="sendMessage">
+        <view class="sendme">
+            <view>填写寄件人信息</view>
+            <image mode="widthFix" src="/images/threedot.png"></image>
+        </view>
+        <view class="xian"></view>
+        <view class="receiveme">
+            <view>填写收件人信息</view>
+            <image mode="widthFix" src="/images/threedot.png"></image>
+        </view>
+    </view>
+</view>

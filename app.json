@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/mySend/mySend",
     "pages/login1/login1",
     "pages/login2/login2",
     "pages/login3/login3",

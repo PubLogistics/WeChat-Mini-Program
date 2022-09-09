@@ -39,11 +39,6 @@
 					</view>
 				</view> -->
             </view>
-            <!-- 待支付金额 -->
-            <!-- <view class="store_Info">
-				<view class="store_h">{{userinfo.pay_total_money}}</view>
-				<view class="store_p">待支付金额(元)</view>
-			</view> -->
         </view>
     </view>
 
