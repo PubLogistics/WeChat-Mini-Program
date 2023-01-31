@@ -1,59 +1,62 @@
 {
-  "pages":[
-    "pages/mySend/mySend",
-    "pages/login1/login1",
-    "pages/login2/login2",
-    "pages/login3/login3",
-    "pages/passengerPage/passengerPage",
-    "pages/driverUserPage/driverUserPage",
-    "pages/passengerSignUp/passengerSignUp",
-    "pages/driverSignUp/driverSignup",
-    "pages/forgetPassword/forgetPassword",
-    "pages/task/task",
-    "pages/service/service",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/list/list",
-    "pages/serviceAgreement/serviceAgreement",
-    "pages/userGuide/userGuide",
-    "pages/identification/identification",
-    "pages/setting/setting",
-    "pages/aboutPlatform/aboutPlatform"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#4161A7",
-    "navigationBarTitleText": "城乡顺运",
-    "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true
-  },
-  "tabBar": {
-    "list": [
-      {
-      "pagePath": "pages/task/task",
-       "text": "任务栏",
-       "iconPath": "/images/tabs/home.png",
-       "selectedIconPath": "/images/tabs/home-active.png"
-      },
-      {
-        "pagePath": "pages/service/service",
-        "text": "客服",
-        "iconPath": "/images/tabs/chat.png",
-        "selectedIconPath": "/images/tabs/chat-active.png"
-      },
-      {
-        "pagePath": "pages/driverUserPage/driverUserPage",
-        "text": "我的",
-        "iconPath": "/images/tabs/my.png",
-        "selectedIconPath": "/images/tabs/my-active.png"
-      }
+    "pages": [
+        
+        "pages/passengerPage/passengerPage",
+        "pages/objectState/objectState",
+        "pages/mySend/mySend",
+        "pages/login1/login1",
+        "pages/login2/login2",
+        "pages/login3/login3",
+        "pages/driverUserPage/driverUserPage",
+        
+        "pages/passengerSignUp/passengerSignUp",
+        "pages/driverSignUp/driverSignup",
+        "pages/forgetPassword/forgetPassword",
+        "pages/task/task",
+        "pages/service/service",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/list/list",
+        "pages/serviceAgreement/serviceAgreement",
+        "pages/userGuide/userGuide",
+        "pages/identification/identification",
+        "pages/setting/setting",
+        "pages/aboutPlatform/aboutPlatform",
+        "pages/m"
     ],
-
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "城乡顺运",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#4161A7",
+        "navigationBarTitleText": "城乡顺运",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/task/task",
+                "text": "任务栏",
+                "iconPath": "/images/tabs/home.png",
+                "selectedIconPath": "/images/tabs/home-active.png"
+            },
+            {
+                "pagePath": "pages/service/service",
+                "text": "客服",
+                "iconPath": "/images/tabs/chat.png",
+                "selectedIconPath": "/images/tabs/chat-active.png"
+            },
+            {
+                "pagePath": "pages/driverUserPage/driverUserPage",
+                "text": "我的",
+                "iconPath": "/images/tabs/my.png",
+                "selectedIconPath": "/images/tabs/my-active.png"
+            }
+        ],
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "城乡顺运",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }

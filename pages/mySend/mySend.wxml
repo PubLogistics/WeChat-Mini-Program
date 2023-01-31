@@ -16,5 +16,8 @@
             <view>填写收件人信息</view>
             <image mode="widthFix" src="/images/threedot.png"></image>
         </view>
+        <view class="query">
+            <button>查询相关线路</button>
+        </view>
     </view>
 </view>

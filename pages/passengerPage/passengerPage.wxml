@@ -1,2 +1,79 @@
-<!--pages/passengerPage/passengerPage.wxml-->
-<text>pages/passengerPage/passengerPage.wxml</text>
+<view class="container">
+    <image src="/images/half-bg.png" class="half-bg" mode="widthFix"></image>
+    <view class="loc">
+        <view class="location">
+            <image mode="widthFix" src="/images/location.png"></image>
+            <text>北京</text>
+        </view>
+    </view>
+
+    <view class="searchBlock">
+            <view class="search">
+                    <view class="inputBlock">
+                            <input type="text" placeholder="搜索" value="" bindinput="GetSearchInput"></input>
+                        </view>
+                    <view class="searchButton" bindtap="ToSearch">
+                            <text>搜索</text>
+                            <icon type="search" size="20"></icon>
+                        </view>
+                </view>
+    </view>
+
+    <!-- 存储信息 -->
+    <view class="functionInfo" bindtap="cuncuInfo">
+        <view class="one-info">
+            <image src="/images/scan.png"></image>
+            <view class="title">扫一扫
+            </view>
+        </view>
+        <view class="xian"></view>
+        <view class="two-info">
+            <image src="/images/credential.png"></image>
+            <view class="title">身份码
+            </view>
+        </view>
+        <view class="xian"></view>
+        <view class="three-info">
+            <image src="/images/bus-route.png"></image>
+            <view class="title">公交线路
+            </view>
+        </view>
+        <view class="xian"></view>
+        <view class="four-info">
+            <image src="/images/send-it.png"></image>
+            <view class="title">我要寄件
+            </view>
+        </view>
+    </view>
+
+    <view class="sendAndReceive">
+    <text> 收件 </text>
+    <view class="xian"></view>
+    <text> 寄件 </text>
+    </view>
+    <view class="transverseXian"></view>
+
+    <view class="receiveInfo">
+        <image src="/images/object.png"></image>
+        <view class="obInfo">
+        <text>预计送达时间：</text>
+        <text>100路</text>
+        <text>单号：</text>
+        </view>
+    </view>
+
+    <view class="receiveInfo2">
+        <image src="/images/object.png"></image>
+        <view class="obInfo2">
+        <text>预计送达时间：</text>
+        <text>100路</text>
+        <text>单号：</text>
+        </view>
+    </view>
+
+    <view class="transverseXian2"></view>
+    
+    <view class="recentReceipt">
+        <text> 近期收件 </text>
+    </view>
+</view>
