@@ -1,6 +1,4 @@
 <!--pages/driverUserPage/driverUserPage.wxml-->
-<!--pages/mine/mine.wxml-->
-
 
 <view class="mine_wp">
     <!-- 头部 -->

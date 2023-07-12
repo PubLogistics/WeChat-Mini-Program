@@ -16,16 +16,16 @@ Page({
     //isLogin: false,
     listData: [{
     //   imgUrl: "/images/ziliao.png",
-      navUrl: "/pages/serviceAgreement/serviceAgreement",
-      text: "服务协议"
+      navUrl: "/pages/driRule/driRule",
+      text: "司机服务协议"
     }, {
     //   imgUrl: "/images/cunchu.png",
       navUrl: "/pages/userGuide/userGuide",
       text: "操作手册"
     }, {
     //   imgUrl: "/images/zhangdan.png",
-      navUrl: "/pages/identification/identification",
-      text: "个人身份认证"
+      navUrl: "/pages/addDriver/addDriver",
+      text: "司机身份认证"
     }, {
     //   imgUrl: "/images/fankyu.png",
       navUrl: "/pages/setting/setting",
@@ -60,11 +60,6 @@ Page({
       }
     })
   },
-//   cuncuInfo() {
-//     wx.navigateTo({
-//       url: '/pages/storeList/storeList',
-//     })
-//   },
 
   /**
    * 生命周期函数--监听页面加载
@@ -81,42 +76,6 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-//   onShow: function () {
-//     var _this = this,
-//       token = wx.getStorageSync('token');
-//     if (!token) {
-//       wx.showModal({
-//         title: '提示',
-//         content: '请您先登录',
-//         success(res) {
-//           if (res.confirm) {
-//             wx.navigateTo({
-//               url: '/pages/login1/login1',
-//             });
-//           } else if (res.cancel) {
-//             wx.switchTab({
-//               url: '/pages/driverUserPage/driverUserPage',
-//             });
-//           }
-//         }
-//       });
-//     } else {
-//       var imageUrl = wx.getStorageSync('imageUrl'),
-//         nickName = wx.getStorageSync('nickName');
-//       if (imageUrl && nickName) {
-//         this.setData({
-//           nickName,
-//           imageUrl,
-//           isLogin: true
-//         });
-//       };
-//       app._get('user/getUserInfo', {}, res => {
-//         this.setData({
-//           userinfo: res.data
-//         })
-//       })
-//     }
-//   },
 
   /**
    * 生命周期函数--监听页面隐藏

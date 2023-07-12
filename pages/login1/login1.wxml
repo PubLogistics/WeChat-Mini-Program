@@ -2,7 +2,7 @@
 
   <image class="bg" src="/images/bg.jpg" mode="heightFix"></image>
   <view class="head">
-    <image class="logo" src="/pages/login1/logo.jpg" mode="widthFix"></image>
+    <image class="logo" src="/images/logo.png" mode="widthFix"></image>
     <text class="title">城乡顺运</text>
   </view>
   <view class="bottom">
