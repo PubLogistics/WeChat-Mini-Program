@@ -1,9 +1,15 @@
 <!--pages/mySend/mySend.wxml-->
 <view class="container">
-    <view class="loc">
-        <view class="location">
+    <image src="/images/half-bg.png" class="half-bg" mode="widthFix"></image>
+    <view>
+        <!-- <view class="location">
             <image mode="widthFix" src="/images/location.png"></image>
-            <text>北京</text>
+            <text>北京</text> -->
+        <view class="location">
+            <view bindtap="moveToLocation" class="position">
+                <image mode="widthFix" src="/images/location.png"></image>
+                <input class="loc" placeholder="请选择地址..." value="{{mapName}}"></input>
+            </view>
         </view>
     </view>
     <view class="sendMessage">
@@ -16,8 +22,8 @@
             <view>填写收件人信息</view>
             <image mode="widthFix" src="/images/threedot.png"></image>
         </view>
-        <view class="query">
-            <button>查询相关线路</button>
+        <view >
+            <button class="query">查询相关线路</button>
         </view>
     </view>
 </view>

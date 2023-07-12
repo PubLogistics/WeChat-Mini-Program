@@ -1,66 +1,110 @@
-// pages/service/service.js
+// pages/splash/splash.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
+  
+    
     data: {
-
+     
+        message:"",
+        isShow:"true"
+      
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
-
+    close(){
+        this.setData({
+            show:false
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
+    default(){
+        return
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
+    commandInput:function(e){
+       
+        var value=e.detail.value;
+        console.log(value);
+        this.setData({inputValue:value})
+       
+     },
+       
+    
+        loginBtnClick:function (e){
+         var value=this.data.inputValue;
+         console.log(value);
+        
+            if(value=="你好"){
+                this.setData({
+                   isShow:false,
+                    message:"你好呀，请问有什么需要吗？"
+                  
+                })
+                
+            }
+            else if(value=="谢谢你"){
+                this.setData({
+                    isShow:false,
+                    message:"不客气，时刻为您效劳,如还有其它问题，请拔打人工客服电话：13317535090"
+                    
+                })
+                
+            }
+            else if(value=="拜拜"){
+                this.setData({
+                    message:"再见，希望你对我的服务满意",
+                    isShow:false
+                })
+            }
+            else if(value=="转人工"){
+                this.setData({
+                   message:"人工客服电话：13317535090",
+                    isShow:false
+                })
+            }
+            else{
+                this.setData({
+                    message:"不好意思，我不太明白，如问题未解决，请拔打人工客服电话：13317535090",
+                    isShow:false
+                })
+            }
+            
+            
+            console.log(this.data.message)
+            console.log(this.data.isShow)
+        },
+    buttons1: function(e)  {
+          this.setData({
+              message:"请点击主页，找到我的账单进行提现”",
+              isShow:false
+          })
+    } ,
+    buttons2:function(e){
+        this.setData({
+            message:"请输入“转人工”，进行详细咨询",
+            isShow:false
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
+    buttons3:function(e){
+        this.setData({
+            message:"本店所有运输均按规章制度进行，保证您的物品运输安全",
+            isShow:false
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
+    buttons4:function(e){
+        this.setData({
+            message:"请点击主页，寻找订单信息进行打印",
+            isShow:false
+        })
     },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+    buttons5:function(e){
+        this.setData({
+            message:"请点击主页，寻找我的订单，进行取消",
+            isShow:false
+        })
     }
-})
+
+}
+        
+        
+)
+    
+     
+     
+
+    

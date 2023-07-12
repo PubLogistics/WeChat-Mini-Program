@@ -1,1 +1,116 @@
-/* pages/service/service.wxss */
+.title{
+   text-align: center;
+   font-size: 50rpx;
+   padding-top: 10em;
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1;
+   color:rgba(0, 110, 255, 0.616);
+
+}
+.titles{
+    font-size:10px;
+    color:rgba(0, 162, 255, 0.377);
+    font-size: 20px;
+    color:rgba(0, 110, 255, 0.616);
+    position:absolute;
+    top:5rpx;
+    right:10rpx;
+}
+
+.ask{
+    position:absolute;
+    top:100rpx;
+}
+.lines1{
+    
+
+    height:0.5px;
+    background:rgba(128, 128, 128, 0.485);
+}
+.lines2{
+    height:0.5px;
+    background:rgba(128, 128, 128, 0.485);
+}
+.lines3{
+    height:0.5px;
+    background:rgba(128, 128, 128, 0.485);
+}
+.lines4{
+    height:0.5px;
+    background:rgba(128, 128, 128, 0.485);
+}
+.button1{
+    font-family:宋体;
+    font-size: 18px;
+    text-align: left;
+  background: linear-gradient(rgba(0, 162, 255, 0.377),#ffffff);
+  border-top-left-radius: 30rpx;
+  border-top-right-radius:30rpx;
+
+}
+.button2{
+    font-family:宋体;
+    font-size: 18px;
+    text-align: left;
+    border-color: blue;
+
+}
+.button3{
+    font-family:宋体;
+    font-size: 18px;
+    text-align: left;
+
+}.button4{
+    font-family:宋体;
+    font-size: 18px;
+    text-align: left;
+
+}.button5{
+    font-family:宋体;
+    font-size: 18px;
+    text-align: left;
+    background: linear-gradient(#ffffff,rgba(0, 162, 255, 0.377));
+    border-bottom-left-radius: 30rpx;
+    border-bottom-right-radius:30rpx;
+
+
+}
+.command{
+    position:absolute;
+    top:1180rpx;
+    left:50rpx;
+    width:700rpx;
+    height:100rpx;
+    display:flex;
+}
+.in2{
+   border-radius:20rpx;
+    width:15%;
+    border:1px solid #ccc;
+    
+    height:30px;
+    min-height:30px;
+    padding-left:10rpx;
+}
+.minibutton{
+    size:10px;
+    color:#ffffff;
+    border-radius: 35rpx;
+    background-color:rgba(0, 162, 255, 0.377);
+    border-color:rgba(0, 110, 255, 0.616);
+    font-weight:200;
+}
+.feedback{
+    position:absolute;
+    top:580rpx;
+    left:80rpx;
+    font-size:15px;
+    font-weight:600;
+    font-family: 宋体;
+    border-color: blue;
+    border-width: 1px solid #D5D5D6;
+    background: linear-gradient(#ffffff,rgba(0, 162, 255, 0.377));
+    border-radius:20rpx;
+    padding-top: 20px;
+}

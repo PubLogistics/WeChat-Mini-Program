@@ -1,6 +1,6 @@
 // pages/passengerSignUp/passengerSignUp.js
 wx.cloud.init({
-    env:'cloud1-8g20o7ib1c00c6cc',
+    env:'cloud1-9gofqo7cf41f1699',
     traceUser: true
 })
 // 获取云数据库引用
@@ -9,6 +9,7 @@ const db = wx.cloud.database();
 let phoneNo = null;//变量，用于存放用户输入的账号
 let password = null;//变量，用于存放用户输入的密码
 let password1 = null;//变量，用于存放用户第二次输入的密码
+let roleId = 2;
 Page({
 
     /**

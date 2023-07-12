@@ -1,19 +1,24 @@
 {
     "pages": [
-        
-        "pages/passengerPage/passengerPage",
-        "pages/objectState/objectState",
-        "pages/mySend/mySend",
+        "pages/passengerUserPage/passengerUserPage",
         "pages/login1/login1",
         "pages/login2/login2",
         "pages/login3/login3",
+        "pages/addDriver/addDriver",
         "pages/driverUserPage/driverUserPage",
         
+        "pages/driRule/driRule",
+        "pages/userrule/userrule",
+        "pages/passengerPage/passengerPage",
+        "pages/histoyReceipt/histoyReceipt",
+        "pages/histoySend/histoySend",
         "pages/passengerSignUp/passengerSignUp",
         "pages/driverSignUp/driverSignup",
         "pages/forgetPassword/forgetPassword",
-        "pages/task/task",
         "pages/service/service",
+        "pages/objectState/objectState",
+        "pages/mySend/mySend",
+        "pages/task/task",
         "pages/index/index",
         "pages/logs/logs",
         "pages/list/list",
@@ -23,6 +28,7 @@
         "pages/setting/setting",
         "pages/aboutPlatform/aboutPlatform",
         "pages/m"
+        
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -57,6 +63,12 @@
         "navigationBarTitleText": "城乡顺运",
         "navigationBarTextStyle": "black"
     },
+    "usingComponents": {},
     "style": "v2",
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    }
 }

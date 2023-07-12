@@ -1,0 +1,49 @@
+<!--pages/driRule/driRule.wxml-->
+
+
+<view class="container1">
+    <text >司机用户服务协议</text>
+</view>
+<view class="container2">
+<text >2023年5月20日版本</text>
+</view>
+<view class="container3">
+<text>  城乡顺运微信小程序平台,通过实时线上与线下信息交互消费者反馈，对货物运输服务的规则要求
+</text>
+<view  class="home-header-line"></view>
+<text class="text1">
+第一条 驾驶人员从业行为考核要求
+</text>
+<text>熟练掌握客运驾驶人的违法驾驶情况，交通安全事故，服务质量，安全运营情况，安全操作规程执行情况
+</text>
+<view  class="home-header-line"></view>
+
+<text class="text1">
+第二条 考核事项及内容
+</text>
+<text>驾驶员在工作期间是否保持通讯畅通，出车时，必须无条件服从调派，是否认真填写派车单，每日能否自觉接受安检人员检查</text>
+<view  class="home-header-line"></view>
+
+<text class="text1">
+第三条 奖惩考核
+</text>
+<text>严禁迟到或早退，违者罚款30元/次，一年中累计10次或一个月达到3次违规者，平台予以解聘</text>
+<view  class="home-header-line"></view>
+
+<text class="text1">
+第四条 遵守货物运输安全准则
+</text>
+<text>运送爆破物品时，驾驶员必须保持清醒的头脑，提高责任心，严禁酒后驾驶，驾驶员和随车人员在运送途中严禁携带烟火</text>
+<view  class="home-header-line"></view>
+
+<text class="text1">
+第五条 驾驶员安全责任
+</text>
+<text>驾驶员必须认真学习国家法律，法规，自觉遵守执行《中华人民共和国道路安全交通法》，《道路交通安全法》，《内蒙古自治区道路运输条例》</text>
+<view  class="home-header-line"></view>
+
+</view>
+<view class="container4"></view>
+
+
+

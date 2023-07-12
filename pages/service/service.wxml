@@ -1,2 +1,27 @@
-<!--pages/service/service.wxml-->
-<text>pages/service/service.wxml</text>
+<view><text class="title" decode="{{true}}">猜你想问</text>
+    <text class="titles">换一换</text>
+</view>
+
+<view class="ask">
+    <view class="lines"></view>
+    <button style="width:100vw;height:8hv;background-color: #ffffff;" class="button1" bindtap="buttons1"> 如何提现</button>
+
+    
+    <button style="width:100vw;height:8hv;background-color: #ffffff;" class="button2" bindtap="buttons2">对订单有疑问</button>
+    <view class="lines2"></view>
+    <button style="width:100vw;height:8hv;background-color: #ffffff;" class="button3" bindtap="buttons3">运输安全问题</button>
+    <view class="lines3"></view>
+    <button style="width:100vw;height:8hv;background-color: #ffffff;" class="button4" bindtap="buttons4">如何下载订单</button>
+    <view class="lines4"></view>
+    <button style="width:100vw;height:8hv;background-color: #ffffff;" class="button5" bindtap="buttons5">如何取消订单</button>
+</view>
+
+<button hidden="{{isShow}}" style="width:80vw;height:8hv;background-color: #ffffff;" class="feedback">
+    {{message}}</button>
+
+
+
+<view class="command">
+    <input class="in2" type="text" style="width:500rpx; height:80rpx;" bindinput="commandInput" data-para="command" placeholder=" 请输入想问的问题 " placeholder-class="placeholder"> </input>
+    <button class="minibutton" size="mini" bindtap="loginBtnClick">发送</button>
+</view>

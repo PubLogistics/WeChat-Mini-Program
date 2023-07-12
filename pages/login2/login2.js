@@ -1,6 +1,6 @@
 // pages/login2/login2.js
 wx.cloud.init({
-    env:'cloud1-8g20o7ib1c00c6cc',
+    env:'cloud1-9gofqo7cf41f1699',
     traceUser: true
 })
 // 获取云数据库引用
